@@ -1,0 +1,10 @@
+name: game-team-generator
+metadata:
+  template: game-team-generator
+services:
+  web:
+    project: .
+    language: js
+    host: staticwebapp
+    infra:
+      path: ./infra
