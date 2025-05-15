@@ -1,0 +1,99 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(135deg, #a4508b 0%, #5f0a87 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #d726ff;
+  text-decoration: inherit;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #ff6fb5;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a4508b 0%, #5f0a87 100%);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #d726ff 0%, #ff6fb5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1em;
+  box-shadow: 0 4px 24px 0 rgba(164, 80, 139, 0.15);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #d726ff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(90deg, #d726ff 0%, #ff6fb5 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(164, 80, 139, 0.10);
+}
+button:hover {
+  border-color: #ff6fb5;
+  background: linear-gradient(90deg, #ff6fb5 0%, #d726ff 100%);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto #d726ff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #5f0a87;
+    background: linear-gradient(135deg, #ff6fb5 0%, #d726ff 100%);
+  }
+  body {
+    background: linear-gradient(135deg, #ff6fb5 0%, #d726ff 100%);
+  }
+  a {
+    color: #a4508b;
+  }
+  a:hover {
+    color: #5f0a87;
+  }
+  button {
+    background: linear-gradient(90deg, #ff6fb5 0%, #d726ff 100%);
+    color: #fff;
+  }
+}
